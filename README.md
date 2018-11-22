@@ -4,6 +4,6 @@
   <p> First Paragraph changes. Should write here more... 
     
     </p>
-    <a href="https://www.youtube.com/"> If bore go to here </a>
+    <a href="https://www.youtube.com/"> If bored go to here </a>
   </body>
   </html>
