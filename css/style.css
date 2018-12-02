@@ -1,5 +1,23 @@
 
 
+.body-container
+{
+
+//background-color: #c4c5c3;
+    display: grid;
+    grid-template-columns: 8vw 1fr 1fr 1fr 8vw;
+    grid-template-areas:
+    "header header header header header"
+    ". main1 main1 main1 empty"
+    ". main1 main1 main1 empty"
+    "footer footer footer footer footer";
+     grid-template-rows: . . . . .;
+    width: 100vw;
+    overflow-x:hidden !important;
+}
+
+
+
 
 body {
 background: #666699 url(images/bg.jpg) repeat-x;
