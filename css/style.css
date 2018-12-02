@@ -8,6 +8,14 @@ body
     overflow-x:hidden !important;
 }
 
+h1
+{
+	text-align: centre;
+	font-size: 25px;
+	padding: 25px;
+	color: #282828;
+}
+
 .content
 {
     grid-area: main1;
