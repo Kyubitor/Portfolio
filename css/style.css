@@ -3,7 +3,7 @@ body
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 0px 0px;
     display: block;
-	background-color:#D1D1D1;
+	background-color:#FBFBFB;
 	font-family:Arial, Helvetica;
     overflow-x:hidden !important;
 }
@@ -42,7 +42,7 @@ body
 
 .grid-header a
 {
-    background-color: #D1D1D1;
+    background-color: #FBFBFB;
     color: #282828;
     text-align: center;
     vertical-align: middle;
@@ -55,6 +55,16 @@ body
     align-items:center
 }
 
+.grid-header a:hover
+{
+    background-color: #282828;
+    color: #FBFBFB;
+}
 
+.grid-header a.active
+{
+    background-color: #664728;
+    color: 28282;
+}
 
 
