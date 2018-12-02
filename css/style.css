@@ -8,6 +8,15 @@ body
     overflow-x:hidden !important;
 }
 
+.content
+{
+    grid-area: main1;
+    word-wrap: break-word;
+    overflow-x:hidden !important;
+    min-height: 75vh;
+
+}
+
 t
 {
 	color:282828;
