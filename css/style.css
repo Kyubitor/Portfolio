@@ -29,8 +29,14 @@
 }
 
 
-body {
-background: #666699 url(images/bg.jpg) repeat-x;
+body 
+{
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    display: block;
+	background-color:#282923;
+	font-family: Ubuntu, Helvetica;
+    overflow-x:hidden !important;
 }
 #wrap {
   width700px;
