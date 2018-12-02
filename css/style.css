@@ -1,4 +1,16 @@
-
+.grid-header
+{
+    //justify-content: center;
+    
+    margin-top: 2em;
+    display: grid;
+    grid-area: header;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-column: 2 / 5;
+    grid-template-areas: 
+    ". . . . .";
+}
 
 .body-container
 {
@@ -15,8 +27,6 @@
     width: 100vw;
     overflow-x:hidden !important;
 }
-
-
 
 
 body {
