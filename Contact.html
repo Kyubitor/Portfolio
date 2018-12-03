@@ -4,24 +4,28 @@
 
 <html>
 <script>
- function validateForm(){
- 	 if (document.forms["contactForm"]["name"].value==null || document.forms["myForm"]["name"].value.trim()=="")
- {
- 	 alert("No Name were inputted!");
-	 return false;
- }
- 	 if (document.forms["contactForm"]["mail"].value==null || document.forms["myForm"]["mail"].value.trim()=="")
- {
- 	 alert("No E-mail address were inputted!");
-	 return false;
- }
-	  if (document.forms["contactForm"]["msg"].value==null || document.forms["myForm"]["msg"].value.trim()=="")
- {
- 	 alert("No Messages were inputted!");
-	 return false;
- }
- else return true;
- }
+function validate() {
+    var str = 
+    [
+        document.forms["myForm"]["user_name"].value,
+        document.forms["myForm"]["user_email"].value,
+        document.forms["myForm"]["user_message"].value
+    ];
+
+    var vNameArray = ["Name", "E-mail", "Message"];
+
+    var result = "";
+
+    for (var i = 0; i < str.length; i++) {
+        if (str[0] === "") {
+            result += vNameArray[i] + " must be filled out!\n";
+        }
+    }
+
+    if (result !== "") {
+        alert(result);
+    }
+}
  </script>
 
 	<head>
