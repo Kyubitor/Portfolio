@@ -12,7 +12,19 @@
 		
 	</head>
 <title> Sean's Portfolio </title> 
-
+<script>
+function allowDrop(ev) {
+    ev.preventDefault();
+}
+function drag(ev) {
+    ev.dataTransfer.setData("text", ev.target.id);
+}
+function drop(ev) {
+    ev.preventDefault();
+    var data = ev.dataTransfer.getData("text");
+    ev.target.appendChild(document.getElementById(data));
+}
+</script>
 <header>
 	<h1>Sean's Portfolio</h1>
 </header>
@@ -27,7 +39,12 @@
 			<a href="Info.html">Info</a>
       			<a href="Contact.html">Contact</a>
      </div>
-     
+     <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+	<img src="Image/MarikaMoney.jpg" draggable="true" ondragstart="drag(event)" id="drag1" width="200">
+	</div>
+
+	<div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
      
      
      
