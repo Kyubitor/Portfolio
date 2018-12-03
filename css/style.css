@@ -117,11 +117,3 @@ tr:nth-child(even)
 {
     background-color: #dddddd;
 }
-form div label
-{
-    display: inline-block;
-    color:#282828;
-    width: 5.5em;
-    text-align: right;
-    vertical-align: middle;
-}
