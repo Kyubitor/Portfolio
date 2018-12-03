@@ -117,11 +117,3 @@ tr:nth-child(even)
 {
     background-color: #dddddd;
 }
-#div1, #div2 {
-    float: left;
-    width: 100px;
-    height: 100px;
-    margin: 100px;
-    padding: 100px;
-    border: 3px solid #282828;
-}
