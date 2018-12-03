@@ -1,2 +1,2 @@
 # MyPortfolio
-www ja internet course
+www and internet course
