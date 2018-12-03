@@ -47,7 +47,6 @@
 			<a class="active" href="Contact.html">Contact</a>
 		</div>
   <form name="contactForm" onsubmit="return validateForm()">
-  Name:
   <div>
     <label for="name">Name:</label>
     <input type="text" id="name" name="user_name">
@@ -59,6 +58,9 @@
   <div>
     <label for="msg">Message:</label>
     <textarea id="msg" name="user_message"></textarea>
+  </div>
+  <div>
+     <button onclick="validate()">Send message</button>
   </div>
 </form> 
 
