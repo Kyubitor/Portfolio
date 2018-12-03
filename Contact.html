@@ -3,7 +3,26 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 <html>
-
+<script>
+ function validateForm(){
+ 	 if (document.forms["contactForm"]["Name"].value==null || document.forms["myForm"]["Name"].value.trim()=="")
+ {
+ 	 alert("No Name were inputted!");
+	 return false;
+ }
+ 	 if (document.forms["contactForm"]["E-mail"].value==null || document.forms["myForm"]["E-mail"].value.trim()=="")
+ {
+ 	 alert("No E-mail address were inputted!");
+	 return false;
+ }
+	  if (document.forms["contactForm"]["Message"].value==null || document.forms["myForm"]["Message"].value.trim()=="")
+ {
+ 	 alert("No Messages were inputted!");
+	 return false;
+ }
+ else return true;
+ }
+ </script>
 
 	<head>
 
@@ -27,7 +46,21 @@
 			<a href="Info.html">Info</a>
 			<a class="active" href="Contact.html">Contact</a>
 		</div>
-    
+  <form name="contactForm" onsubmit="return validateForm()">
+  Name:
+	  <br>
+	  	<input type="text" name="Name" value="">
+	  <br>
+  E-email:<br>
+ 		 <input type="text" name="E-mail" value="">
+ 	 <br>
+  Message:
+	 <br>
+	  	<textarea type="text" name="Message" value="">
+	<br>
+  <input type="submit" value="Submit">
+</form> 
+
     
     
     
