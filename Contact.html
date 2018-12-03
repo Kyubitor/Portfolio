@@ -51,7 +51,8 @@ function validate() {
 			<a href="Info.html">Info</a>
 			<a class="active" href="Contact.html">Contact</a>
 	</div>
-	<form name="Formcontact" method="post" onsubmit="return validate()">
+	<div class="content">
+	   <form name="Formcontact" method="post" onsubmit="return validate()">
 		<div>
 			label for="name">Name: </label>
 			<input type="text" id="name" name="user_name" required>
@@ -68,6 +69,7 @@ function validate() {
 		<div>
 			<button onclick="validate()">Send message</button>
 		</div>
+	</div>
 	</form>
     
     
